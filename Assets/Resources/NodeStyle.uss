@@ -1,0 +1,60 @@
+
+.dialogue-node {
+    border: 1px solid #555555;
+    border-radius: 4px;
+}
+
+.entry-node {
+    border: 1px solid #444444;
+    border-radius: 4px;
+    background-color: #333333;
+}
+
+.unity-node__title {
+    background-color: #393939;
+    color: #FFFFFF;
+}
+
+.unity-node__title-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.unity-label {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.node-content-container {
+    padding: 5px;
+}
+
+.node-text-field {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.unity-text-element {
+    white-space: normal;
+    color: #FFFFFF;
+}
+
+.unity-text-field__input {
+    white-space: normal;
+    word-wrap: break-word;
+    color: #FFFFFF;
+}
+
+.unity-base-field__label {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#nodeColorField {
+    width: 30px;
+    height: 20px;
+    margin-left: 5px;
+}

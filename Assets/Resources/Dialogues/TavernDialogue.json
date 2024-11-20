@@ -1,0 +1,656 @@
+{
+    "Nodes": [
+        {
+            "NodeGUID": "start-node-guid",
+            "DialogueText": "ENTRYPOINT",
+            "DialogueTextPreview": "",
+            "Choices": [
+                {
+                    "ChoiceText": "Next",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 100.0,
+                "y": 200.0
+            },
+            "NodeColor": {
+                "r": 0.5,
+                "g": 0.5,
+                "b": 0.5,
+                "a": 1.0
+            },
+            "EntryPoint": true
+        },
+        {
+            "NodeGUID": "information-node-guid",
+            "DialogueText": "Information, eh? That'll cost you a few coins. What do you want to know?",
+            "DialogueTextPreview": "Vendor: Information, eh?",
+            "Choices": [
+                {
+                    "ChoiceText": "Seen any suspicious people?",
+                    "TargetNodeGUID": "suspicious-node-guid"
+                },
+                {
+                    "ChoiceText": "Know any local rumors?",
+                    "TargetNodeGUID": "rumors-node-guid"
+                },
+                {
+                    "ChoiceText": "Can you tell me about this town?",
+                    "TargetNodeGUID": "town-info-node-guid"
+                },
+                {
+                    "ChoiceText": "Actually, never mind.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 980.0,
+                "y": -136.0
+            },
+            "NodeColor": {
+                "r": 0.8999999761581421,
+                "g": 0.699999988079071,
+                "b": 0.5,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "info-for-gold-node-guid",
+            "DialogueText": "He was here earlier, left towards the old mill.",
+            "DialogueTextPreview": "Vendor: He went to the old mill.",
+            "Choices": [
+                {
+                    "ChoiceText": "Thank you.",
+                    "TargetNodeGUID": "end-node-guid"
+                },
+                {
+                    "ChoiceText": "Ask more questions.",
+                    "TargetNodeGUID": "information-node-guid"
+                },
+                {
+                    "ChoiceText": "Leave.",
+                    "TargetNodeGUID": "exit-node-guid"
+                },
+                {
+                    "ChoiceText": "Remain silent.",
+                    "TargetNodeGUID": "end-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 2150.0,
+                "y": -560.0
+            },
+            "NodeColor": {
+                "r": 0.8999999761581421,
+                "g": 0.699999988079071,
+                "b": 0.5,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "suspicious-node-guid",
+            "DialogueText": "I might have seen someone like that. What's it worth to you?",
+            "DialogueTextPreview": "Vendor: What's it worth?",
+            "Choices": [
+                {
+                    "ChoiceText": "Offer 10 gold.",
+                    "TargetNodeGUID": "info-for-gold-node-guid"
+                },
+                {
+                    "ChoiceText": "Intimidate him.",
+                    "TargetNodeGUID": "intimidate-node-guid"
+                },
+                {
+                    "ChoiceText": "Persuade him to tell you.",
+                    "TargetNodeGUID": "persuade-node-guid"
+                },
+                {
+                    "ChoiceText": "Forget it.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 1709.0,
+                "y": -136.0
+            },
+            "NodeColor": {
+                "r": 0.949999988079071,
+                "g": 0.75,
+                "b": 0.550000011920929,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "rumors-node-guid",
+            "DialogueText": "Rumor has it the old mill is haunted. Some say treasure lies within.",
+            "DialogueTextPreview": "Vendor: The old mill is haunted.",
+            "Choices": [
+                {
+                    "ChoiceText": "Thanks for the info.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Tell me more.",
+                    "TargetNodeGUID": "tell-more-node-guid"
+                },
+                {
+                    "ChoiceText": "Not interested.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Any other rumors?",
+                    "TargetNodeGUID": "other-rumors-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 1709.0,
+                "y": 69.0
+            },
+            "NodeColor": {
+                "r": 0.8999999761581421,
+                "g": 0.699999988079071,
+                "b": 0.5,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "intimidate-node-guid",
+            "DialogueText": "Easy there! No need for threats. He went towards the old mill.",
+            "DialogueTextPreview": "Vendor: He went towards the old mill.",
+            "Choices": [
+                {
+                    "ChoiceText": "Thank you.",
+                    "TargetNodeGUID": "end-node-guid"
+                },
+                {
+                    "ChoiceText": "Ask more questions.",
+                    "TargetNodeGUID": "information-node-guid"
+                },
+                {
+                    "ChoiceText": "Leave.",
+                    "TargetNodeGUID": "exit-node-guid"
+                },
+                {
+                    "ChoiceText": "Remain silent.",
+                    "TargetNodeGUID": "end-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 2537.0,
+                "y": -136.0
+            },
+            "NodeColor": {
+                "r": 0.949999988079071,
+                "g": 0.75,
+                "b": 0.550000011920929,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "end-node-guid",
+            "DialogueText": "Safe travels, adventurer!",
+            "DialogueTextPreview": "Vendor: Safe travels!",
+            "Choices": [],
+            "Position": {
+                "x": 4563.0,
+                "y": 357.0
+            },
+            "NodeColor": {
+                "r": 0.5,
+                "g": 0.30000001192092898,
+                "b": 0.10000000149011612,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "town-info-node-guid",
+            "DialogueText": "Our town is small but full of history. The old mill is a notable landmark.",
+            "DialogueTextPreview": "Vendor: Town history.",
+            "Choices": [
+                {
+                    "ChoiceText": "Tell me about the old mill.",
+                    "TargetNodeGUID": "old-mill-node-guid"
+                },
+                {
+                    "ChoiceText": "Any notable people around?",
+                    "TargetNodeGUID": "notable-people-node-guid"
+                },
+                {
+                    "ChoiceText": "Thanks for the info.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Never mind.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 1709.0,
+                "y": 274.0
+            },
+            "NodeColor": {
+                "r": 0.8500000238418579,
+                "g": 0.6499999761581421,
+                "b": 0.44999998807907107,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "forest-lights-node-guid",
+            "DialogueText": "They say it's the work of elves or perhaps something more sinister.",
+            "DialogueTextPreview": "Vendor: Elves or worse.",
+            "Choices": [
+                {
+                    "ChoiceText": "I'll be careful.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Elves, you say?",
+                    "TargetNodeGUID": "elves-node-guid"
+                },
+                {
+                    "ChoiceText": "Sounds intriguing.",
+                    "TargetNodeGUID": "end-node-guid"
+                },
+                {
+                    "ChoiceText": "Any other rumors?",
+                    "TargetNodeGUID": "rumors-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 3181.0,
+                "y": 547.0
+            },
+            "NodeColor": {
+                "r": 0.800000011920929,
+                "g": 0.6000000238418579,
+                "b": 0.4000000059604645,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "stone-circle-node-guid",
+            "DialogueText": "No one knows who built it. Some say it holds magical properties.",
+            "DialogueTextPreview": "Vendor: Mysterious stone circle.",
+            "Choices": [
+                {
+                    "ChoiceText": "I'll check it out.",
+                    "TargetNodeGUID": "end-node-guid"
+                },
+                {
+                    "ChoiceText": "Sounds mysterious.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Any dangers?",
+                    "TargetNodeGUID": "dangers-circle-node-guid"
+                },
+                {
+                    "ChoiceText": "Any other places?",
+                    "TargetNodeGUID": "town-info-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 1670.0,
+                "y": 907.0
+            },
+            "NodeColor": {
+                "r": 0.75,
+                "g": 0.550000011920929,
+                "b": 0.3499999940395355,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "elves-node-guid",
+            "DialogueText": "Yes, though no one has seen them up close. Just stories, really.",
+            "DialogueTextPreview": "Vendor: Just stories.",
+            "Choices": [
+                {
+                    "ChoiceText": "Thanks for the info.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "I'll look into it.",
+                    "TargetNodeGUID": "end-node-guid"
+                },
+                {
+                    "ChoiceText": "Not interested.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Any other rumors?",
+                    "TargetNodeGUID": "rumors-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 3740.0,
+                "y": 215.0
+            },
+            "NodeColor": {
+                "r": 0.75,
+                "g": 0.550000011920929,
+                "b": 0.3499999940395355,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "dangers-circle-node-guid",
+            "DialogueText": "Just the usual wildlife. Nothing a seasoned adventurer can't handle.",
+            "DialogueTextPreview": "Vendor: Usual wildlife.",
+            "Choices": [
+                {
+                    "ChoiceText": "Good to know.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Thanks.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "I'll be careful.",
+                    "TargetNodeGUID": "end-node-guid"
+                },
+                {
+                    "ChoiceText": "Any other places?",
+                    "TargetNodeGUID": "town-info-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 3740.0,
+                "y": 420.0
+            },
+            "NodeColor": {
+                "r": 0.699999988079071,
+                "g": 0.5,
+                "b": 0.30000001192092898,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "exit-node-guid",
+            "DialogueText": "You leave the tavern and step back into the bustling streets.",
+            "DialogueTextPreview": "Narrator: You leave the tavern.",
+            "Choices": [],
+            "Position": {
+                "x": 4563.0,
+                "y": 153.0
+            },
+            "NodeColor": {
+                "r": 0.4000000059604645,
+                "g": 0.20000000298023225,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "notable-people-node-guid",
+            "DialogueText": "Well, there's old Marlowe the blacksmith and Lady Evelyn at the manor.",
+            "DialogueTextPreview": "Vendor: Notable locals.",
+            "Choices": [
+                {
+                    "ChoiceText": "Thanks for the info.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Never mind.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 1670.0,
+                "y": 749.0
+            },
+            "NodeColor": {
+                "r": 0.800000011920929,
+                "g": 0.6000000238418579,
+                "b": 0.4000000059604645,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "old-mill-node-guid",
+            "DialogueText": "It's been abandoned for years, but some say it's haunted or holds secrets.",
+            "DialogueTextPreview": "Vendor: About the old mill.",
+            "Choices": [
+                {
+                    "ChoiceText": "Interesting.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Is it dangerous?",
+                    "TargetNodeGUID": "dangerous-mill-node-guid"
+                },
+                {
+                    "ChoiceText": "I might visit it.",
+                    "TargetNodeGUID": "end-node-guid"
+                },
+                {
+                    "ChoiceText": "Any other landmarks?",
+                    "TargetNodeGUID": "other-landmarks-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 2537.0,
+                "y": 702.0
+            },
+            "NodeColor": {
+                "r": 0.800000011920929,
+                "g": 0.6000000238418579,
+                "b": 0.4000000059604645,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "persuade-node-guid",
+            "DialogueText": "Well, since you asked nicely, he mentioned heading to the old mill.",
+            "DialogueTextPreview": "Vendor: He went to the old mill.",
+            "Choices": [
+                {
+                    "ChoiceText": "Thank you.",
+                    "TargetNodeGUID": "end-node-guid"
+                },
+                {
+                    "ChoiceText": "Ask more questions.",
+                    "TargetNodeGUID": "information-node-guid"
+                },
+                {
+                    "ChoiceText": "Leave.",
+                    "TargetNodeGUID": "exit-node-guid"
+                },
+                {
+                    "ChoiceText": "Remain silent.",
+                    "TargetNodeGUID": "end-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 2537.0,
+                "y": 69.0
+            },
+            "NodeColor": {
+                "r": 0.949999988079071,
+                "g": 0.75,
+                "b": 0.550000011920929,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "tell-more-node-guid",
+            "DialogueText": "They say spirits guard the place, but who knows what's really there.",
+            "DialogueTextPreview": "Vendor: Spirits guard the mill.",
+            "Choices": [
+                {
+                    "ChoiceText": "Interesting.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "I'll check it out.",
+                    "TargetNodeGUID": "end-node-guid"
+                },
+                {
+                    "ChoiceText": "Sounds dangerous.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Any other rumors?",
+                    "TargetNodeGUID": "other-rumors-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 2537.0,
+                "y": 274.0
+            },
+            "NodeColor": {
+                "r": 0.8500000238418579,
+                "g": 0.6499999761581421,
+                "b": 0.44999998807907107,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "other-rumors-node-guid",
+            "DialogueText": "Some travelers talk about strange lights in the forest at night.",
+            "DialogueTextPreview": "Vendor: Strange lights in the forest.",
+            "Choices": [
+                {
+                    "ChoiceText": "Thanks for the info.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Tell me more.",
+                    "TargetNodeGUID": "forest-lights-node-guid"
+                },
+                {
+                    "ChoiceText": "Not interested.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Any other rumors?",
+                    "TargetNodeGUID": "rumors-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 2537.0,
+                "y": 479.0
+            },
+            "NodeColor": {
+                "r": 0.8500000238418579,
+                "g": 0.6499999761581421,
+                "b": 0.44999998807907107,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "other-landmarks-node-guid",
+            "DialogueText": "There's the ancient stone circle in the hills. Quite a sight.",
+            "DialogueTextPreview": "Vendor: Ancient stone circle.",
+            "Choices": [
+                {
+                    "ChoiceText": "Tell me more.",
+                    "TargetNodeGUID": "stone-circle-node-guid"
+                },
+                {
+                    "ChoiceText": "Thanks for the info.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Not interested.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Any other places?",
+                    "TargetNodeGUID": "town-info-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 3181.0,
+                "y": 753.0
+            },
+            "NodeColor": {
+                "r": 0.800000011920929,
+                "g": 0.6000000238418579,
+                "b": 0.4000000059604645,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "dangerous-mill-node-guid",
+            "DialogueText": "Could be. Just be careful if you decide to explore it.",
+            "DialogueTextPreview": "Vendor: Be careful at the mill.",
+            "Choices": [
+                {
+                    "ChoiceText": "Thanks for the warning.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "I can handle myself.",
+                    "TargetNodeGUID": "end-node-guid"
+                },
+                {
+                    "ChoiceText": "Maybe I'll avoid it.",
+                    "TargetNodeGUID": "vendor-greeting-node-guid"
+                },
+                {
+                    "ChoiceText": "Any other landmarks?",
+                    "TargetNodeGUID": "other-landmarks-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 3740.0,
+                "y": 625.0
+            },
+            "NodeColor": {
+                "r": 0.75,
+                "g": 0.550000011920929,
+                "b": 0.3499999940395355,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "vendor-greeting-node-guid",
+            "DialogueText": "Welcome to the Rusty Tankard! What can I get for you?",
+            "DialogueTextPreview": "Vendor: Welcome to the Rusty Tankard!",
+            "Choices": [
+                {
+                    "ChoiceText": "I'm looking for information.",
+                    "TargetNodeGUID": "information-node-guid"
+                },
+                {
+                    "ChoiceText": "Never mind.",
+                    "TargetNodeGUID": "end-node-guid"
+                }
+            ],
+            "Position": {
+                "x": 539.0,
+                "y": 227.0
+            },
+            "NodeColor": {
+                "r": 0.800000011920929,
+                "g": 0.6000000238418579,
+                "b": 0.4000000059604645,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        }
+    ]
+}

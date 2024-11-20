@@ -1,0 +1,8 @@
+.node {
+    background-color: #3C3F41;
+    border: 1px solid #555555;
+}
+
+.connector {
+    background-color: #282C34;
+}

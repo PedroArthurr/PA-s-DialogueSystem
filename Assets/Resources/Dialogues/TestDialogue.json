@@ -1,0 +1,150 @@
+{
+    "Nodes": [
+        {
+            "NodeGUID": "7eae1fcf-2f64-4216-9a06-14c511a6035e",
+            "DialogueText": "ENTRYPOINT",
+            "DialogueTextPreview": "",
+            "Choices": [
+                {
+                    "ChoiceText": "Next",
+                    "TargetNodeGUID": "7f551e4f-d93f-403b-bac7-57be202833a1"
+                }
+            ],
+            "Position": {
+                "x": 100.0,
+                "y": 200.0
+            },
+            "NodeColor": {
+                "r": 0.5,
+                "g": 0.5,
+                "b": 0.5,
+                "a": 1.0
+            },
+            "EntryPoint": true
+        },
+        {
+            "NodeGUID": "7f551e4f-d93f-403b-bac7-57be202833a1",
+            "DialogueText": "Hello! Welcome to my dialogue system!",
+            "DialogueTextPreview": "Dialogue system",
+            "Choices": [
+                {
+                    "ChoiceText": "I'd like to know more about you",
+                    "TargetNodeGUID": "460975c2-344a-4a6a-beae-51eeb307cead"
+                },
+                {
+                    "ChoiceText": "!I'd like to know more about this project",
+                    "TargetNodeGUID": "0c7659b4-bd02-45d2-a027-0baab31d223b"
+                },
+                {
+                    "ChoiceText": "Meh",
+                    "TargetNodeGUID": "a293e4c2-9b15-41fa-a3d0-e13306960ee2"
+                },
+                {
+                    "ChoiceText": "Okay, bye!",
+                    "TargetNodeGUID": "4259cd71-0eab-429c-a6f2-8485afba2609"
+                }
+            ],
+            "Position": {
+                "x": 396.0,
+                "y": 166.0
+            },
+            "NodeColor": {
+                "r": 0.0,
+                "g": 0.6132075786590576,
+                "b": 0.021099742501974107,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "460975c2-344a-4a6a-beae-51eeb307cead",
+            "DialogueText": "My name is Pedro, I'm currently studying Unity's Editor scripting, nice to meet ya!",
+            "DialogueTextPreview": "Introduce myself",
+            "Choices": [
+                {
+                    "ChoiceText": "What about this project?",
+                    "TargetNodeGUID": "0c7659b4-bd02-45d2-a027-0baab31d223b"
+                },
+                {
+                    "ChoiceText": "Uh... okay",
+                    "TargetNodeGUID": "4259cd71-0eab-429c-a6f2-8485afba2609"
+                },
+                {
+                    "ChoiceText": "I didn't like it... at all",
+                    "TargetNodeGUID": "a293e4c2-9b15-41fa-a3d0-e13306960ee2"
+                }
+            ],
+            "Position": {
+                "x": 1232.0,
+                "y": -147.0
+            },
+            "NodeColor": {
+                "r": 0.5576089024543762,
+                "g": 0.6132075786590576,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "0c7659b4-bd02-45d2-a027-0baab31d223b",
+            "DialogueText": "Right! I'm using the Unity's Editor scripting to modify the Graph View of the engine, it's currently used, for example in Shader Graphs!",
+            "DialogueTextPreview": "Explain",
+            "Choices": [
+                {
+                    "ChoiceText": "Oh, nice! What about you?",
+                    "TargetNodeGUID": "460975c2-344a-4a6a-beae-51eeb307cead"
+                },
+                {
+                    "ChoiceText": "That's cool!",
+                    "TargetNodeGUID": "4259cd71-0eab-429c-a6f2-8485afba2609"
+                }
+            ],
+            "Position": {
+                "x": 1232.0,
+                "y": 34.0
+            },
+            "NodeColor": {
+                "r": 0.0,
+                "g": 0.3426395058631897,
+                "b": 0.5566037893295288,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "a293e4c2-9b15-41fa-a3d0-e13306960ee2",
+            "DialogueText": "Oh, I'm so sorry it wasn't enough for you!",
+            "DialogueTextPreview": "Ironic Apologize",
+            "Choices": [],
+            "Position": {
+                "x": 1232.0,
+                "y": 191.0
+            },
+            "NodeColor": {
+                "r": 0.5377358198165894,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        },
+        {
+            "NodeGUID": "4259cd71-0eab-429c-a6f2-8485afba2609",
+            "DialogueText": "Have a good time!",
+            "DialogueTextPreview": "Dismiss",
+            "Choices": [],
+            "Position": {
+                "x": 1232.0,
+                "y": 324.0
+            },
+            "NodeColor": {
+                "r": 0.4905660152435303,
+                "g": 0.0,
+                "b": 0.40641653537750246,
+                "a": 1.0
+            },
+            "EntryPoint": false
+        }
+    ]
+}
